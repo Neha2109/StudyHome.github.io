@@ -1,1 +1,0 @@
-# StudyHome.github.io

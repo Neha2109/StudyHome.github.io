@@ -1,71 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/login.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <meta name="google-signin-client_id" content="990086843762-3fkeui2rtfor2kka1a064agcfpufo3nb.apps.googleusercontent.com">
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/login.js"></script>
+    <title>SignUp</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
-
 <body>
-    <div class="container">
-        <div class="card">
-            <div class="inner-box" id="card">
-                <div class="card-front">
-                    <H3>StudyHome</H3>
-                    <h2><img id="icon" src="Logo.jpeg"></h2>
-                    <h2>Login</h2>
-                    <form>
-                        <input type="email" placeholder="Enter your id" class="input-box" required>
-                        <input type="password" placeholder="Enter your password" class="input-box" required>
-                        <button type="submit" class="submit-btn">submit</button>
-                        <input type="checkbox"><span>Remember Me</span>
-                    </form>
-                    <button type="button" class="btn" onclick="openRegister()">I'm New Here</button>
-                    <a href="">Forgot password</a>
-                    <div class="g-signin2" data-onsuccess="onSignIn"></div>
-            <div class="data">
-                <p>Profile Details</p>
-                <img id="pic" class="img-circle" width="100" height="100" />
-                <p>Email Address</p>
-                <p id="email" class="alert alert-danger"></p>
-                <button onclick="signOut()" class="btn btn-danger">SignOut</button>
-            </div>
-                </div>
-                <div class="card-back">
-                    <H3>JUPITER MAIL</H3>
-                    <h2><img id="icon1" src="Logo.jpeg"></h2>
-                    <h2>Register</h2>
-                    <form>
-                        <input type="text" placeholder="Enter your Name" class="input-box" required>
-                        <input type="email" placeholder="Enter your id" class="input-box" required>
-                        <input type="password" placeholder="Enter your password" class="input-box" required>
-                        <button  class="submit-btn" onclick="parent.location='home.html'">submit</button>
-                        <input type="checkbox"><span>Remember Me</span>
-                    </form>
-                    <button type="button" class="btn" onclick="openLogin()">I've an account</button>
-                </div>
-            </div> 
-            <a href="#" class="b" role="button">Click Here to Enter</a>
+    
+<div class="container">
 
-        </div> 
+<header>
+
+    <a href="#" class="logo">Smart<span>Study</span></a>
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="teacher.html">teacher</a>
+        <a href="review.html">review</a>
+        <a href="contact.html">contact</a>
+    </nav>
+
+</header>
+
+<h1 class="heading">Sign Up</h1>
+
+<!-- contact section  -->
+
+<section class="contact">
+
+<div class="image">
+    <img src="images/contact-img.svg" alt="">
+</div>
+
+<form action="">
+
+    <div class="inputBox">
+        <input type="text" placeholder="Name*" required>
+        <input list="user" name="user" placeholder="User*" required>
+        <datalist id="user">
+        <option value="Student">
+        <option value="Teacher">
+        </datalist>
     </div>
-    <script>
-        var card=document.getElementById("card");
-        function openRegister(){
-            card.style.transform ="rotatey(-180deg)";
-        }
-        function openLogin(){
-            card.style.transform ="rotatey(0deg)";
-        }
-    </script>
-</body>
+    <input type="text" placeholder="Course Name*" class="box" required>
+    <input type="text" placeholder="Classcode*" class="box" required>
 
+
+    <input type="submit" class="btn" value="SignUp">
+    <br><p>By clicking the "Sign up" button, you are creating an account,<br>
+         and agree to StudyHome' Terms of Service and Privacy Policy</p>
+
+</form>
+
+</section>
+
+
+<!-- footer section  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>about us</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, maxime!</p>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="index.html">home</a>
+            <a href="course.html">course</a>
+            <a href="teacher.html">teacher</a>
+            <a href="review.html">review</a>
+            <a href="contact.html">contact</a>
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#">facebook</a>
+            <a href="#">twitter</a>
+            <a href="#">instagram</a>
+            <a href="#">linkedin</a>
+        </div>
+
+        <div class="box">
+            <h3>contact us</h3>
+           <p> <i class="fas fa-phone"></i> +123-456-7890 </p>
+           <p> <i class="fas fa-envelope"></i> studyhome@gmail.com </p>
+           <p> <i class="fas fa-map-marker-alt"></i> mumbai, india - 400104 </p>
+        </div>
+
+    </div>
+
+    <div class="credit"> created by <span> mr. web designer </span> | all rights reserved </div>
+
+</section>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- custom js file link -->
+<script src="js/script.js"></script>
+
+</body>
 </html>

@@ -18,5 +18,20 @@
   }
   @media(max-width:800px)
   {
+    h1{
+      text-align: center;
+      margin-left: -40%;
+    }
+    #comments {
+      width:50vh !important;
+      height:50vh !important;
+      box-shadow: 5inch rgb(78, 75, 75) !important;
+      margin-left: -40% !important;
+    }
+    #Announce {
+      margin-left: 35%;
+      margin-top: 40px;
+   
+   }
     
   }

@@ -2,6 +2,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    justify-content: space-between;
+    
 
 }
 body  {
@@ -10,7 +12,7 @@ body  {
     background-image: url(giphy.gif);
     background-repeat: no-repeat;
     background-origin: padding-box;
-
+    
     
 }
 nav {
@@ -51,6 +53,22 @@ nav .logo {
     cursor: pointer;
 }
 @media(max-width: 800px){
+    body{
+        width: 100%;
+        height:100vh;
+        background-image: none;
+        box-sizing: border-box;
+
+    }
+   
+    .set1,.set2,.set3{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      margin-left: -65% !important;
+      box-sizing: border-box;
+    }
+   
     nav .mainMenu {
         height: 100vh;
         position: fixed;
@@ -64,7 +82,7 @@ nav .logo {
         background: #000;
         transition: top 1s ease;
         display: none;
-        
+         
     }
     nav .mainMenu .closeMenu {
         display: block;
@@ -99,7 +117,7 @@ a{
     display: flex;
     flex-direction: column;
     width: 250px;
-    height:250;
+    height:250px;
     margin-left: 50%;
     margin-top: 10%;
     box-shadow: rosybrown;
@@ -147,12 +165,76 @@ li{
     margin:20px;
     border: black 2px;
     box-sizing: border-box;
-    padding-left: 70px;
+    padding-left: 60px;
     padding-top: 10px;
   }
-
-
-
+section{
+    margin-top: 250px;
+}
+  .footer .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  
+  .footer .box-container .box {
+    flex: 1 1 20rem;
+  }
+  
+  .footer .box-container .box h3 {
+    font-size: 2.5rem;
+    color: var(--violet);
+    padding: 0.7rem 0;
+  }
+  
+  .footer .box-container .box p {
+    font-size: 1.5rem;
+    color: #666;
+    padding: 0.7rem 0;
+  }
+  
+  .footer .box-container .box a {
+    display: block;
+    font-size: 1.5rem;
+    color: #666;
+    padding: 0.7rem 0;
+  }
+  
+  .footer .box-container .box a:hover {
+    color: var(--pink);
+  }
+  
+  .footer .box-container .box p i {
+    padding-right: 0.5rem;
+    color: var(--pink);
+  }
+  
+  .footer .credit {
+    font-size: 2rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    padding-top: 2rem;
+    text-align: center;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+    color: #666;
+  }
+  
+  .footer .credit span {
+    color: var(--pink);
+  }
+  .box {
+    flex: 1 1 30rem;
+    border-radius: 0.5rem;
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    position: relative;
+  }
+  .review .box {
+    border-radius: 0.5rem;
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    flex: 1 1 30rem;
+  }
 
 
 

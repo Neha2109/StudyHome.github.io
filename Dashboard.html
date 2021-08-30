@@ -5,20 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart study</title>
     <link rel="stylesheet" href="css/sa.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" >
 </head>
 <body>
-        <nav>
-            <div class="logo"><h1>Dashboard</h1></div>
-            <div class="openMenu"><i class="fa fa-bars"></i></div>
-            <ul class="mainMenu">
-                <div class="closeMenu"><i class="fa fa-times"></i></div>
-            </ul>
+    <div class="container">
+    <header>
+
+        <a href="index.html" class="logo"><span style="color:#0245a3;">Study</span><span>Home</span></a>
+    
+        <div id="menu" class="fas fa-bars"></div>
+    
+        <nav style="background-color:white;"class="navbar">
+            <a href="index.html" onMouseOver="this.style.color='#8fbaf3'"onMouseOut="this.style.color='#0245a3'"style="color:#0245a3; font-weight: bold;">home</a>
+            <a href="teacher.html" onMouseOver="this.style.color='#8fbaf3'"onMouseOut="this.style.color='#0245a3'" style=" color:#0245a3; font-weight: bold;">teacher</a>
+            <a href="review.html" onMouseOver="this.style.color='#8fbaf3'"onMouseOut="this.style.color='#0245a3'" style=" color:#0245a3; font-weight: bold;">review</a>
+            <a href="contact.html" onMouseOver="this.style.color='#8fbaf3'"onMouseOut="this.style.color='#0245a3'"  style="color:#0245a3; font-weight: bold;">contact</a>
         </nav>
+    
+    </header>
         <div id="block"><ul class="mainMenu">
-            <span class="set1"> <li><a href="assignment.html"> Assignments</a></li></span>
-            <span class="set2"> <li><a href="test.html">Tests</a></li></span>
-            <span class="set3"> <li><a href="#">Upcoming Events</a></li></span>
+            <span class="set1"> <li ><a style="color:white; padding-top: 0.3rem; margin-left: 2rem;"  href="assignment.html"> Assignments</a></li></span>
+            <span class="set2"> <li ><a style="color:white; padding-top: 0.3rem; margin-left: 3.6rem;" href="test.html">Tests</a></li></span>
+            <span class="set3"> <li ><a style="color:white; padding-top: 0.3rem; margin-left: 2rem;"href="#">Upcoming Events</a></li></span>
         </ul></div>
         <section class="footer">
 
@@ -59,7 +68,9 @@
         
         </section>
 
-
-    <script src="js/app.js"></script>
+   
+</div>
+<script src="js/app.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

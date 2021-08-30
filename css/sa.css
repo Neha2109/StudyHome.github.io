@@ -1,5 +1,4 @@
 * {
-<<<<<<< HEAD
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -8,10 +7,10 @@
 body {
   font-family: "Arial", sans-serif;
   background-color: white;
-  background-image: url(giphy.gif);
+  background-image: url(images/giphy.gif);
   background-repeat: no-repeat;
   background-origin: padding-box;
-=======
+
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -27,7 +26,6 @@ body  {
     background-origin: padding-box;
     
     
->>>>>>> 0ff65864a6234f591220f1c67674f74aa93588c6
 }
 nav {
   text-align: center;
